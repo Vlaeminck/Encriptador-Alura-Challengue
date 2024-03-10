@@ -1,7 +1,6 @@
 /* Encriptador - 1 Desktop */
 *{
 background: #F3F5FC;
-;
 font-family: Inter;
 font-size: 32px;
 font-weight: 400;
@@ -16,6 +15,9 @@ margin-left: 10px;
 width: 5%;
 
 }
+header{
+    
+}
 
 main{
     display: flex;
@@ -24,11 +26,14 @@ main{
 }
 
 .textarea{
+    background-color: white;
     border: none;
+    border-radius: 24px;
     text-transform: lowercase;
     color: darkblue;
-    margin-top: 90px;
+    margin-top: 20px;
     resize: none;
+    height: 150px;
 }
 
 ::placeholder {color: darkblue}
@@ -39,7 +44,7 @@ main{
 .mensaje{
 
     background: white;
-    background-image: url(img/Muñeco.png);
+    background: white url(img/Muñeco.png) no-repeat;
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
@@ -55,7 +60,35 @@ main{
     outline: none;
 }
 
+/*.mensaje {
+    background: white url(img/Muñeco.png) no-repeat;
+    animation: levitation 6s linear infinite alternate;
+}
+
+@keyframes levitation {
+    0%, 100% {
+        background-position: top center;
+    }
+    25% {
+        background-position: center 5%;
+    }
+    75% {
+        background-position: center 50%; 
+    }
+}
+*/
+
+
+
+
+
+
+h6 img {
+    width: 3%;
+}
+
 .botones{
+    transform: scale(0.7);
     display: flex;
 }
 
@@ -66,6 +99,11 @@ main{
     height: 80px;
     width: 350px;
     cursor: pointer;
+    transition: 400ms;
+}
+
+.btn-encriptar:hover{
+   transform: scale(1.05);
 }
 
 .btn-desencriptar{
@@ -77,7 +115,13 @@ main{
     width: 350px;
     margin-left: 10px;
     cursor: pointer;
+    transition: 400ms;
 }
+
+.btn-desencriptar:hover{
+    transform: scale(1.05);
+ }
+    
 
 .copiar{
     border: 1px solid;
@@ -88,5 +132,9 @@ main{
     margin-top: 402px;
     position: absolute;
     width: 336px;
+    transition: 400ms;
 
 }
+.copiar:hover{
+    transform: scale(1.05);
+ }
