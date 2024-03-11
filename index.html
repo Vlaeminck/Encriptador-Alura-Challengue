@@ -26,8 +26,8 @@
 
             <div class="botones">
 
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
 
             </div>
         </section>
@@ -35,12 +35,18 @@
         <section>
             <textarea class="mensaje" cols="14" rows="10"></textarea>
 
+
             <div>
-                <button class="copiar">Copiar</button>
+                <button class="copiar" onclick="copiarTexto()">Copiar</button>
             </div>
 
         </section>
-    </main>
 
+    </main>
+    
+    <footer class="alumno">
+        <a href="https://github.com/Vlaeminck/Encriptador-de-texto-Alura"><p><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="">Encriptador de texto por Tomás Vlaeminck</p></a>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>

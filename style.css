@@ -5,7 +5,7 @@ font-family: Inter;
 font-size: 32px;
 font-weight: 400;
 line-height: 48px;
-letter-spacing: 0em; 
+letter-spacing: 0em;
 
 }
 
@@ -14,9 +14,6 @@ padding-top: 10px;
 margin-left: 10px;
 width: 5%;
 
-}
-header{
-    
 }
 
 main{
@@ -31,7 +28,7 @@ main{
     border-radius: 24px;
     text-transform: lowercase;
     color: darkblue;
-    margin-top: 20px;
+    margin-top: 15px;
     resize: none;
     height: 150px;
 }
@@ -59,29 +56,6 @@ main{
 .mensaje:focus{
     outline: none;
 }
-
-/*.mensaje {
-    background: white url(img/Muñeco.png) no-repeat;
-    animation: levitation 6s linear infinite alternate;
-}
-
-@keyframes levitation {
-    0%, 100% {
-        background-position: top center;
-    }
-    25% {
-        background-position: center 5%;
-    }
-    75% {
-        background-position: center 50%; 
-    }
-}
-*/
-
-
-
-
-
 
 h6 img {
     width: 3%;
@@ -121,6 +95,17 @@ h6 img {
 .btn-desencriptar:hover{
     transform: scale(1.05);
  }
+
+ .sinTexto{
+    background-color: white;
+    color: #0A3871;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 300px;
+    position: absolute;
+    width: 336px;
+    transition: 400ms;
+ }
     
 
 .copiar{
@@ -129,12 +114,29 @@ h6 img {
     color: #0A3871;
     height: 67px;
     margin-left: 108px;
-    margin-top: 402px;
+    margin-top: 400px;
     position: absolute;
-    width: 336px;
+    width: 350px;
     transition: 400ms;
 
 }
 .copiar:hover{
     transform: scale(1.05);
+ }
+
+ .alumno p{
+    font-size: 15px;
+    color: #0A3871;
+ }
+
+ .alumno a{
+    text-decoration: none;
+ }
+
+ .alumno img{
+    width: 1%;
+ }
+
+ .alumno{
+    margin-bottom: 50px;
  }
