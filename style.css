@@ -140,3 +140,69 @@ h6 img {
  .alumno{
     margin-bottom: 50px;
  }
+
+ @media screen and (max-width: 480px) {
+
+    * {
+        font-size: 20px;
+        line-height: 30px;
+        background-color: rgb(224, 224, 224);
+    }
+
+
+    .logo {
+        width: 20%;
+        margin-left: 5px;
+    }
+
+    main {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    h6{
+        margin: 0;
+    }
+
+    .textarea {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .mensaje {
+        margin-left: 0;
+        width: 93%;
+        height: 30%;
+        padding-left: 10px;
+        position: static;
+    }
+
+    
+
+    .botonCopiar{
+        justify-content: center;
+    }
+
+
+    .copiar {
+        width: 50%;
+        margin-left: 20%;
+        margin-top: 15px;
+        color: #0A3871;
+        background-color: #D8DFE8;
+    }
+    
+
+
+    .alumno{
+        margin-top: 1px;
+    }
+
+    .alumno{
+        margin-left: 12%;
+    }
+
+    .alumno img {
+        width: 3%;
+    }
+ }
