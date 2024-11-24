@@ -1,49 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <!-- Agregamos una fuente moderna de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
-    <title>Encriptador - Alura</title>
-
 </head>
 <body>
-    <header>
-        <img class="logo" src="img/caticon2.png" alt="Logo de Alura">
-    </header>
+    <div class="container">
+        <header>
+            <h1>Encriptador de Texto</h1>
+        </header>
+        
+        <main>
+            <section class="input-section">
+                <textarea id="textoEntrada" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="buttons">
+                    <button onclick="encriptar()">Encriptar</button>
+                    <button onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            
+            <section class="output-section">
+                <textarea id="textoSalida" readonly></textarea>
+                <button onclick="copiar()">Copiar</button>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 Encriptador de Texto - Alura Challenge</p>
+        </footer>
+    </div>
 
-    <main>
-        <section>
-            <textarea class="textarea" cols="30" rows="10" placeholder=" Ingrese el texto aquí 😸"></textarea>
-
-            <div class="enunciado">
-                <h6> <img src="img/bi_exclamation-circle-fill.png" alt=""> Solo letras minúsculas y sin acentos</h6>
-            </div>
-
-            <div class="botones">
-
-                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-
-            </div>
-        </section>
-
-        <section class="mediaBlock">
-            <textarea class="mensaje" cols="14" rows="10"></textarea>
-
-
-            <div class="botonCopiar">
-                <button class="copiar" onclick="copiarTexto()">Copiar</button>
-            </div>
-
-        </section>
-
-    </main>
-   
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
